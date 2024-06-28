@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<body>
+    <h2>Area of circle</h2>
+    <button type="button" onclick="circle()">click here for area</button>
+    <h2>Area of triangle</h2>
+    <button type="button" onclick="triangle()">click here for area</button>
+    <h2>Area of rectangle</h2>
+    <button type="button" onclick="rectangle()">click here for area</button>
+    <h2>Area of square</h2>
+    <button type="button" onclick="square()">click here for area</button>
+    <h2>Surface area of cylinder</h2>
+    <button type="button" onclick="cylinder()">click here for area</button>
+    <h2>Surface area of cube</h2>
+    <button type="button" onclick="cube()">click here for area</button>
+
+    <script>
+        function circle(){
+            let r = parseFloat(prompt("Enter the Radius:"));
+            let area = 3.14 * r * r ;
+            document.write("Area of Circle: " +area+" sq.cm");
+        }
+        function triangle(){
+            let b = parseFloat(prompt("Enter the Base:"));
+            let h = parseFloat(prompt("Enter the Height:"));
+            let area = 1/2 * b * h ;
+            document.write("Area of Triangle: " +area+" sq.cm");
+        }
+        function rectangle(){
+            let l = parseFloat(prompt("Enter the Length:"));
+            let b = parseFloat(prompt("Enter the Breadth:"));
+            let area = l * b ;
+            document.write("Area of Reactangle: " +area+" sq.cm");
+        }
+        function square(){
+            let l = parseFloat(prompt("Enter the Length:"));
+            let area = l * l ;
+            document.write("Area of Square: " +area+" sq.cm");
+        }
+        function cylinder(){
+            let r = parseFloat(prompt("Enter the Radius:"));
+            let h = parseFloat(prompt("Enter the Height:"));
+            let area = 2 * 3.14 * r * (h+r) ;
+            document.write("Surface Area of Cylinder: " +area+" sq.cm");
+        }
+        function cube(){
+            let l = parseFloat(prompt("Enter the Length:"));
+            let area = 6 * l * l;
+            document.write("Surface Area of Cube: " +area+" sq.cm");
+        }
+    </script>
+</body>
+</html>
